@@ -22,6 +22,7 @@ class Display extends StatelessWidget {
                 text,
                 minFontSize: 20,
                 maxFontSize: 80,
+                maxLines: 1,
                 textAlign: TextAlign.end,
                 style: TextStyle(
                   fontWeight: FontWeight.w100,
