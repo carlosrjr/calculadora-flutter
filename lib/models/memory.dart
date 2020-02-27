@@ -24,6 +24,7 @@ class Memory {
     } else {
       _buffer[0] = _calculate();
       _buffer[1] = 0.0;
+      _value = _buffer[0].toString();
     }
 
     _wipeValue = true;
@@ -41,6 +42,7 @@ class Memory {
     _wipeValue = false;
 
     _buffer[_bufferIndex] = double.tryParse(_value) ?? 0;
+    print(_buffer);
   }
 
   _allClear() {
