@@ -22,6 +22,7 @@ class _CalculatorState extends State<Calculator> {
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Calculadora",
       home: Column(
         children: <Widget>[
